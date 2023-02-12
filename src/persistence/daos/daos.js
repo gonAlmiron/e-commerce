@@ -1,4 +1,4 @@
-import logger from "../services/logger.js";
+import logger from "../../services/logger.js";
 import DaoMongoDB from "./dao-mongodb/mongodb.js";
 import { UserModel } from "./dao-MongoDB/schemas/user.js";
 
