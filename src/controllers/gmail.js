@@ -1,5 +1,5 @@
 
-import { transporter } from "../services/email.js";
+import { transporter } from "../services/notifications";
 import { templateHtml } from '../services/template.js';
 
 export const gmailController = async(req, res) => {

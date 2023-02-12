@@ -56,8 +56,10 @@ passport.use('login', loginFunc);
 passport.use('signup', signUpFunc);
 
 app.use((err, req, res, next) => {
-  console.error(err);
-  res.status(500).json({error: 'an error occurred'});
+  logger.info(err);
+  res.status(500).json({
+    error: 'an error occurred',
+    msg: err.stack});
 });
 
 export default app

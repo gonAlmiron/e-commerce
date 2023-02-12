@@ -13,19 +13,19 @@ const logConfiguration = {
 
 const logger = createLogger(logConfiguration);
 
-if (Config.NODE_ENV !== 'development') {
-  logger.add(
-    new File({
-      filename: './logs/errors.log',
-      level: 'error',
-    }),
-  );
+// if (Config.NODE_ENV !== 'development') {
+//   logger.add(
+//     new File({
+//       filename: './logs/errors.log',
+//       level: 'error',
+//     }),
+//   );
 
-  logger.add(
-    new File({
-      filename: './logs/logs.log',
-    }),
-  );
-}
+  // logger.add(
+  //   new File({
+  //     filename: './logs/logs.log',
+  //   }),
+  // );
+// }
 
 export default logger;

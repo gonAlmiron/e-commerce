@@ -1,6 +1,16 @@
-import { createTransport } from 'nodemailer';
+import twilio from 'twilio';
 import dotenv from 'dotenv';
+import { createTransport } from 'nodemailer';
+
+
 dotenv.config();
+
+// WHATSAPP
+
+export const twilioClient = twilio(process.env.SID, process.env.TOKEN);
+
+
+// EMAIL 
 
 export const transporter = createTransport({
     // host:'smtp.gmail.com',
@@ -11,3 +21,4 @@ export const transporter = createTransport({
         pass:process.env.PASSWORD,
     }
 });
+

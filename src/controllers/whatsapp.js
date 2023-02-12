@@ -1,4 +1,4 @@
-import { twilioClient } from "../services/whatsapp.js";
+import { twilioClient } from "../services/notifications.js";
 
 export const wppController = async(req, res) => {
     try {
