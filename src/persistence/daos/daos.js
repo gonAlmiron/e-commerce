@@ -1,24 +1,24 @@
 import logger from "../../services/logger.js";
-import DaoMongoDB from "./dao-mongodb/mongodb.js";
-import { UserModel } from "./dao-MongoDB/schemas/user.js";
-import * as MongoDB from "./dao-MongoDB/mongodb"
+import DaoMongoDB from '../daos/dao-MongoDB/mongodb' 
+import { ProductSchema } from "./dao-MongoDB/schemas/product.js";
+
 
 let dao;
-let option = process.env.PERSISTENCE
+let option = process.argv[2]
 
 
 switch (option) {
     case 'mongo':
-        dao.initMongoDB();
-        dao = MongoDB
+        dao = new DaoMongoDB('product', ProductSchema);
+        dao.initMongoDB()
         logger.info(option);
         break;
     default:
-        dao = new DaoMongoDB('user', UserModel);
+        dao = new DaoMongoDB('product', ProductSchema);
         break;
 }
 
-export async function save () {
+export async function save (obj) {
     return await dao.save(obj);
 }
 

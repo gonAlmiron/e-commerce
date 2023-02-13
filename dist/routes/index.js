@@ -9,7 +9,9 @@ var _gmail = require("../controllers/gmail.js");
 var _whatsapp = require("../controllers/whatsapp.js");
 var _passport = _interopRequireDefault(require("passport"));
 var _auth = require("../services/auth.js");
-var _users = require("../controllers/users.js");
+var _usersController = require("../controllers/users.controller.js");
+var _products = _interopRequireDefault(require("./products.router"));
+var _users = _interopRequireDefault(require("./users.router"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 var router = (0, _express.Router)();
 router.get('/', function (req, res) {
@@ -17,8 +19,8 @@ router.get('/', function (req, res) {
     message: "Petición desde el SERVIDOR -> ROUTER"
   });
 });
-router.post('/signup', _users.signUpController);
-router.post('/login', _passport["default"].authenticate('login', _auth.passportOptions), _users.loginController);
+router.use('/products', _products["default"]);
+router.use('/auth', _users["default"]);
 router.post('/gmail', _gmail.gmailController);
 router.post('/whatsapp', _whatsapp.wppController);
 router.post('/inbox', _whatsapp.inboxController);

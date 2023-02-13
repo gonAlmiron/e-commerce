@@ -1,37 +1,36 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import logger from '../../../services/logger';
-import { UserModel } from './schemas/user';
-
 
 dotenv.config();
 
 mongoose.set('strictQuery', false);
 
-export const initMongoDB = async () => {
-    try {
-        await mongoose.connect(process.env.MONGO_ATLAS_URL)
-        logger.info('Conectado a MongoDB')
-    } catch (error) {
-        logger.info(error)  
+export default class DaoMongoDB {
+    constructor(collection, schema){
+        this.collection = mongoose.model(collection, schema);
+        this.initDB = mongoose.connect(process.env.MONGO_ATLAS_URL, () => logger.info("Connected to MongoDB"));
     }
-}
- 
 
-   export const save = async (doc) => {
+    async initMongoDB() {
+        return this.initDB;
+    }
+
+    async save(doc) {
         try {
-            const document = await UserModel.create(doc);
+            const document = await this.collection.create(doc);
             return document;
         } catch (error) {
             logger.info(error);
         }
     }
 
-    export const getAll = async () => {
+    async getAll() {
         try {
-            const docs = await UserModel.find({});
+            const docs = await this.collection.find({});
             return docs;
         } catch (error) {
-            logger.info(error);
+            console.log(error);
         }
     }
+}

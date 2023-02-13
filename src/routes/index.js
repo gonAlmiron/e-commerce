@@ -3,7 +3,9 @@ import { gmailController } from '../controllers/gmail.js';
 import { inboxController, wppController } from '../controllers/whatsapp.js';
 import passport from 'passport';
 import { passportOptions } from '../services/auth.js';
-import { loginController, signUpController } from '../controllers/users.js';
+import { loginController, signUpController } from '../controllers/users.controller.js';
+import ProductsRouter from './products.router'
+import AuthRouter from './users.router'
 
 
 const router = Router();
@@ -16,15 +18,13 @@ router.get('/', (req, res) => {
     })
 })
 
-router.post('/signup', signUpController);
 
-router.post('/login', passport.authenticate('login', passportOptions), loginController );
+router.use('/products', ProductsRouter)
 
-router.post('/gmail', gmailController)
+router.use('/auth', AuthRouter)
 
-router.post('/whatsapp', wppController); 
+router.use('/notifications', NotificationRouter)
 
-router.post('/inbox', inboxController); 
 
 
 

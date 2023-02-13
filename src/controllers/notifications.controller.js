@@ -1,7 +1,10 @@
-import { twilioClient } from "../services/notifications.js";
-
 import { transporter } from "../services/notifications";
 import { templateHtml } from '../services/template.js';
+import { twilioClient } from "../services/notifications.js";
+import { transporter } from "../services/notifications";
+import { templateHtml } from '../services/template.js';
+
+
 
 export const gmailController = async (req, res) => {
     const { dest } = req.body;
@@ -27,3 +30,4 @@ export const gmailController = async (req, res) => {
         console.log(error);
     }
 }
+
