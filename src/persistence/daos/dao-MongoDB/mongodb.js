@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import logger from '../../../services/logger';
+import { UserModel } from './schemas/user';
 
 
 dotenv.config();
@@ -19,7 +20,7 @@ export const initMongoDB = async () => {
 
    export const save = async (doc) => {
         try {
-            const document = await this.collection.create(doc);
+            const document = await UserModel.create(doc);
             return document;
         } catch (error) {
             logger.info(error);
@@ -28,7 +29,7 @@ export const initMongoDB = async () => {
 
     export const getAll = async () => {
         try {
-            const docs = await this.collection.find({});
+            const docs = await UserModel.find({});
             return docs;
         } catch (error) {
             logger.info(error);
