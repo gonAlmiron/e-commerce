@@ -1,7 +1,6 @@
 "use strict";
 
 var _server = _interopRequireDefault(require("./services/server"));
-var _database = require("./services/database");
 var _config = _interopRequireDefault(require("./config"));
 var _logger = _interopRequireDefault(require("./services/logger"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }

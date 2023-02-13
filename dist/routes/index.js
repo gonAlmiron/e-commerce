@@ -21,8 +21,6 @@ router.get('/', function (req, res) {
 });
 router.use('/products', _products["default"]);
 router.use('/auth', _users["default"]);
-router.post('/gmail', _gmail.gmailController);
-router.post('/whatsapp', _whatsapp.wppController);
-router.post('/inbox', _whatsapp.inboxController);
+router.use('/notifications', NotificationRouter);
 var _default = router;
 exports["default"] = _default;

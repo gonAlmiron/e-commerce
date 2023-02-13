@@ -1,6 +1,6 @@
 import passport from 'passport';
 import { Strategy as LocalStrategy } from 'passport-local';
-import { UserModel } from '../models/user';
+import { UserModel } from '../persistence/daos/dao-MongoDB/schemas/user'
 import logger from './logger'
 import UserAPI from '../api'
 

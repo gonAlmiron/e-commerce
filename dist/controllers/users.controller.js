@@ -7,7 +7,6 @@ exports.signUpController = exports.loginController = void 0;
 var _passport = _interopRequireDefault(require("passport"));
 var _logger = _interopRequireDefault(require("../services/logger.js"));
 var _auth = require("../services/auth.js");
-var _express = require("express");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 var signUpController = function signUpController(req, res, next) {
   _passport["default"].authenticate('signup', _auth.passportOptions, function (err, user, info) {
