@@ -2,7 +2,7 @@
 import { transporter } from "../services/notifications";
 import { templateHtml } from '../services/template.js';
 
-export const gmailController = async(req, res) => {
+export const gmailController = async (req, res) => {
     const { dest } = req.body;
     const mailOptions = {
         from: process.env.EMAIL,
@@ -18,11 +18,11 @@ export const gmailController = async(req, res) => {
             }
         ]
     };
-    try{
+    try {
         const response = await transporter.sendMail(mailOptions);
         console.log('Email enviado!');
         res.json(response);
-    }catch(error){
+    } catch (error) {
         console.log(error);
     }
 }

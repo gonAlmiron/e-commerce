@@ -36,7 +36,7 @@ const mySecret = 'mySecret';
 
 app.use(cookieParser(mySecret));
 
-app.use(express.urlencoded({extended: true}))
+app.use(express.urlencoded({ extended: true }))
 
 app.use(cors())
 
@@ -59,7 +59,8 @@ app.use((err, req, res, next) => {
   logger.info(err);
   res.status(500).json({
     error: 'an error occurred',
-    msg: err.stack});
+    msg: err.stack
+  });
 });
 
 export default app
