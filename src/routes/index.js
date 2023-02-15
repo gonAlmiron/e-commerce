@@ -2,6 +2,7 @@ import {Router} from 'express';
 import ProductsRouter from './products.router'
 import AuthRouter from './users.router'
 import NotificationRouter from './notifications.router'
+import {getAllController, saveController } from '../controllers/products.controller';
 
 const router = Router();
 
@@ -13,11 +14,14 @@ router.get('/', (req, res) => {
 })
 
 
-router.use('/products', ProductsRouter)
+// router.use('/products', ProductsRouter)
 
 router.use('/auth', AuthRouter)
 
 router.use('/notifications', NotificationRouter)
+
+router.post('/products', saveController)
+router.get('/products', getAllController)
 
 
 
