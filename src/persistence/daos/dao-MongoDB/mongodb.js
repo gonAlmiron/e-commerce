@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import logger from '../../../logs/logger';
+import { asDto } from '../../DTO/products.dto';
 
 dotenv.config();
 
@@ -28,7 +29,7 @@ export default class DaoMongoDB {
     async getAll() {
         try {
             const docs = await this.collection.find({});
-            return docs;
+            return asDto(docs);
         } catch (error) {
             logger.info(error);
         }

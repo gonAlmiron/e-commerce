@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import ProductsRouter from './products.router'
+
 import AuthRouter from './users.router'
 import NotificationRouter from './notifications.router'
 import {getAllController, saveController } from '../controllers/products.controller';

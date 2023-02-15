@@ -6,9 +6,9 @@ import {saveController, getAllController} from '../controllers/products.controll
 const router = Router()
 
 
-router.get('/products', getAllController);
+router.get('/', getAllController);
 // router.get('/:id', Handler(ProductController.getProductById));
-router.post('/products', saveController);
+router.post('/', saveController);
 // router.put('/:id', Handler(ProductController.updateProduct));
 // router.delete('/:id', Handler(ProductController.deleteProduct));
 
