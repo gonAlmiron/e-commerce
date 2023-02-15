@@ -18,5 +18,5 @@ var UserSchema = new _mongoose.Schema({
 }, {
   timestamps: true
 });
-var UserModel = (0, _mongoose.model)('user', UserSchema);
+var UserModel = (0, _mongoose.model)('user-ecommerce', UserSchema);
 exports.UserModel = UserModel;

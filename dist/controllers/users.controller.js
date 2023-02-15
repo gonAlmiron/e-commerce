@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.signUpController = exports.loginController = void 0;
 var _passport = _interopRequireDefault(require("passport"));
-var _logger = _interopRequireDefault(require("../services/logger.js"));
+var _logger = _interopRequireDefault(require("../logs/logger.js"));
 var _auth = require("../services/auth.js");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 var signUpController = function signUpController(req, res, next) {

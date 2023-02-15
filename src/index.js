@@ -1,6 +1,6 @@
 import server from './services/server';
 import Config from './config';
-import logger from './services/logger';
+import logger from './logs/logger';
 
 const PORT = process.env.PORT || Config.PUERTO
 

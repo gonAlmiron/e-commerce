@@ -30,7 +30,7 @@ export default class DaoMongoDB {
             const docs = await this.collection.find({});
             return docs;
         } catch (error) {
-            console.log(error);
+            logger.info(error);
         }
     }
 }

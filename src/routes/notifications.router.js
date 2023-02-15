@@ -1,5 +1,5 @@
-import { gmailController} from "../controllers/gmail";
-import { wppController, inboxController } from "../controllers/whatsapp";
+import {gmailController} from '../controllers/notifications.controller'
+import { wppController, inboxController } from '../controllers/notifications.controller'
 
 import {Router} from 'express'
 

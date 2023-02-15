@@ -7,7 +7,7 @@ import cookieParser from 'cookie-parser';
 import mainRouter from '../routes';
 import { loginFunc, signUpFunc } from './auth';
 import passport from 'passport';
-import logger from './logger';
+import logger from '../logs/logger';
 
 
 const app = express()

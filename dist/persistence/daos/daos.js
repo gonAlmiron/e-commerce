@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getAll = getAll;
 exports.save = save;
-var _logger = _interopRequireDefault(require("../../services/logger.js"));
+var _logger = _interopRequireDefault(require("../../logs/logger"));
 var _mongodb = _interopRequireDefault(require("../daos/dao-MongoDB/mongodb"));
 var _product = require("./dao-MongoDB/schemas/product.js");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }

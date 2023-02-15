@@ -1,5 +1,5 @@
 import passport from 'passport';
-import logger from '../services/logger.js';
+import logger from '../logs/logger.js';
 import { passportOptions } from '../services/auth.js';
 
 export const signUpController = (req, res, next) => {

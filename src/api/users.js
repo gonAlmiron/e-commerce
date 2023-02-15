@@ -1,4 +1,4 @@
-import {UserModel} from '../models/user'
+import { UserModel } from "../persistence/daos/dao-MongoDB/schemas/user";
 
 
   const findByID = (id) => {

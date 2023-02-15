@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-var _user = require("../models/user");
+var _user = require("../persistence/daos/dao-MongoDB/schemas/user");
 var findByID = function findByID(id) {
   if (id) return _user.UserModel.findById(id);
   return _user.UserModel.find();
