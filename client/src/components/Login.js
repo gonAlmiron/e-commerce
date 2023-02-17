@@ -6,26 +6,19 @@ import { Link } from "react-router-dom";
 
 const Login = (props) =>  {
 
-
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-
     
     const handleSubmit = async (e) => {
-
       e.preventDefault();
-
       try {
-
         await axios.post("http://localhost:3002/api/login",
         {username, password} 
         )} 
         catch(err) {
-
+          console.log(err)
       }
-
     }
-
 
   return (
     <div className="Auth-form-container">
