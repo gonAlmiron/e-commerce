@@ -12,7 +12,7 @@ export default class ProductsRepository {
 
     async getAll() {  
         const products = await this.dao.getAll();
-        const prodsDTO = asDto(products)
+        const prodsDTO = products
         return prodsDTO;
     }
 }

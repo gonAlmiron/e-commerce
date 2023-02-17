@@ -17,8 +17,10 @@ const NuevoProducto = (props) =>  {
       e.preventDefault();
       try {
         await axios.post("http://localhost:3002/api/products",
-        {name, description, price} 
-        )} 
+        {name, description, price}
+        )
+        console.log( "Se creó un nuevo Producto: " + name + ", Descripción:"+ description `\n` +" Precio:"+ price)
+      } 
         catch(err) {
             console.log(err.message)
             console.log(err.stack)
@@ -26,7 +28,7 @@ const NuevoProducto = (props) =>  {
     }
 
   return (
-    <>
+    <div className="container my-5">
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
         <Form.Label>Product Name</Form.Label>
@@ -45,7 +47,7 @@ const NuevoProducto = (props) =>  {
         Submit
       </Button>
     </Form>
-    </>
+    </div>
   );
 }
 
