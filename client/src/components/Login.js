@@ -6,19 +6,26 @@ import { Link } from "react-router-dom";
 
 const Login = (props) =>  {
 
+
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+
     
     const handleSubmit = async (e) => {
+
       e.preventDefault();
+
       try {
-        await axios.post("http://localhost:3002/api/login",
+
+        await axios.post("http://localhost:3002/api/auth/login",
         {username, password} 
         )} 
         catch(err) {
-          console.log(err)
+
       }
+
     }
+
 
   return (
     <div className="Auth-form-container">
@@ -46,9 +53,7 @@ const Login = (props) =>  {
             />
           </div>
           <div className="d-grid gap-2 mt-3">
-            <input type="submit" className="btn btn-primary">
-              Ingresar
-            </input>
+            <input type="submit" className="btn btn-primary"/>
           
           </div>
           <div className="Auth-route">

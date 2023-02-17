@@ -18,7 +18,7 @@ const SignUp = (props) =>  {
 
       try {
 
-        await axios.post("http://localhost:3002/api/signup",
+        await axios.post("http://localhost:3002/api/auth/signup",
         {username, password} 
         )} 
         catch(err) {
