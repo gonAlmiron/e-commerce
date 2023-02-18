@@ -4,9 +4,6 @@ import mongoose from "mongoose";
 import request from "supertest";
 
 describe('TESTS SERVER PRODUCTS', () => {
-  beforeEach(async() => {
-    await mongoose.connection.collections['products'].drop();
-  })
 
   it('create new', async () => {
     const doc = {
@@ -22,6 +19,10 @@ describe('TESTS SERVER PRODUCTS', () => {
     expect(response.body.body).toBe(doc.body);
 
 
+  })
+
+  it('get all', async () => {
+    
   })
 }
 )

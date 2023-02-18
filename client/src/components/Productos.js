@@ -26,18 +26,19 @@ const Productos =  () => {
           <th>Precio</th>
         </tr>
       </thead>
-          {productos.map((prod) => {
-            return(
-              <tbody key={prod._id}>
-              <tr>
-                <td>{prod.name}</td>
-                <td>{prod.description}</td>
-                <td>{prod.price}</td>
-              </tr>
-              </tbody>
 
-            )
-          })}
+      {productos.map((prod) => {
+        return(
+          <tbody key={prod._id}>
+          <tr>
+            <td>{prod.name}</td>
+            <td>{prod.description}</td>
+            <td>{prod.price}</td>
+          </tr>
+          </tbody>
+          )
+      })
+   }
     </Table>
       </> 
     )
