@@ -627,3 +627,23 @@
   level: 'info',
   timestamp: '2023-02-20T15:54:51.667Z'
 }
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:57:52.901Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:57:52.921Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:58:52.879Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:58:52.897Z'
+}

@@ -3,11 +3,10 @@ import mongoose from "mongoose";
 import app from "../services/server";
 import request from "supertest";
 
-describe('TESTS SERVER PRODUCTS', () => {
+describe('************** TESTS SERVER PRODUCTS **************', () => {
   beforeEach(async() => {
     await mongoose.connection.collections['products'].drop();
   })
-
   it('create new product', async () => {
     const doc = {
       name: 'Pendrive 128GB Kingston USB',
@@ -24,9 +23,7 @@ describe('TESTS SERVER PRODUCTS', () => {
 
   })
 
-  it('get all', async () => {
-    
-  })
+
 it('get all products', async() => {
   const doc = {
     name: 'Pendrive 128GB Kingston USB',

@@ -25,9 +25,7 @@ var DaoMongoDB = /*#__PURE__*/function () {
   function DaoMongoDB(collection, schema) {
     _classCallCheck(this, DaoMongoDB);
     this.collection = _mongoose["default"].model(collection, schema);
-    this.initDB = _mongoose["default"].connect(process.env.MONGO_ATLAS_URL, function () {
-      return _logger["default"].info("Connected to MongoDB");
-    });
+    this.initDB = _mongoose["default"].connect(process.env.MONGO_ATLAS_URL);
   }
   _createClass(DaoMongoDB, [{
     key: "initMongoDB",
