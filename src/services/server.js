@@ -8,6 +8,7 @@ import mainRouter from '../routes';
 import { loginFunc, signUpFunc } from './auth';
 import passport from 'passport';
 import logger from '../logs/logger';
+import morgan from 'morgan';
 
 
 const app = express()
@@ -37,6 +38,8 @@ const mySecret = 'mySecret';
 app.use(cookieParser(mySecret));
 
 app.use(express.urlencoded({ extended: true }))
+
+app.use(morgan('dev'));
 
 app.use(cors())
 

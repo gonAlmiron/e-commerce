@@ -23,20 +23,8 @@ var logConfiguration = {
   })]
 };
 var logger = createLogger(logConfiguration);
-
-// if (Config.NODE_ENV !== 'development') {
-//   logger.add(
-//     new File({
-//       filename: './logs/errors.log',
-//       level: 'error',
-//     }),
-//   );
-
-// logger.add(
-//   new File({
-//     filename: './logs/logs.log',
-//   }),
-// );
-// }
+logger.add(new File({
+  filename: './logs/logs.log'
+}));
 var _default = logger;
 exports["default"] = _default;

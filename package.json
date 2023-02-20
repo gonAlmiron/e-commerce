@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src --out-dir dist",
     "start": "npm run build && node ./dist/index.js",
-    "dev": "nodemon --exec babel-node ./src/index.js"
+    "dev": "nodemon --exec babel-node ./src/index.js",
+    "test": "npm run build && set NODE_OPTIONS=--experimental-vm-modules && npx jest"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +23,7 @@
     "express-session": "^1.17.3",
     "log4js": "^6.7.1",
     "mongoose": "^6.8.4",
+    "morgan": "^1.10.0",
     "nodemailer": "^6.9.1",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",

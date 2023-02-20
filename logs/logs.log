@@ -1,0 +1,629 @@
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:01:41.130Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:01:41.332Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:02:12.106Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:02:12.024Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:02:12.693Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:04:25.191Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:04:25.693Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:04:25.997Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:04:26.392Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:05:20.820Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:05:20.872Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:05:21.524Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:05:21.694Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:05:49.293Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:05:49.649Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:05:49.981Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:05:50.290Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:06:59.758Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:06:59.821Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:07:00.474Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:07:00.497Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:13:02.673Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:13:02.727Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:13:35.585Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:13:36.290Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:13:36.147Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:13:36.803Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:15:19.517Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:15:19.521Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:15:20.302Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:15:20.323Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:16:20.807Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:16:20.835Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:16:21.535Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:16:21.553Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:17:12.675Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:17:12.686Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:17:13.412Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:17:13.443Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:17:29.957Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:17:30.008Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:17:30.723Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:17:30.773Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:19:40.165Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:19:40.268Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:19:41.025Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:19:41.040Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:20:26.710Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:20:26.769Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:20:27.411Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:20:27.436Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:23:59.030Z'
+}
+{
+  message: 'Escuchando en el puerto 3002 - PID WORKER 2040 ',
+  level: 'info',
+  timestamp: '2023-02-20T15:23:59.091Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:23:59.623Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:28:02.818Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:28:02.860Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:28:03.534Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:28:03.562Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:28:59.827Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:28:59.937Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:29:00.510Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:29:00.654Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:29:28.426Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:29:28.471Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:29:29.138Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:29:29.162Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:30:11.244Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:30:11.261Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:30:11.975Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:30:11.985Z'
+}
+{
+  index: 0,
+  code: 11000,
+  keyPattern: { name: 1 },
+  keyValue: { name: 'Pendrive 64GB Kingston USB' },
+  level: 'info',
+  timestamp: '2023-02-20T15:30:12.130Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:32:29.795Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:32:29.796Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:32:30.624Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:32:30.631Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:33:45.402Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:33:45.499Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:33:46.159Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:33:46.222Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:36:42.705Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:36:42.756Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:36:43.446Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:36:43.485Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:38:55.100Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:38:55.105Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:38:55.835Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:38:55.837Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:40:19.964Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:40:19.970Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:40:20.748Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:40:20.765Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:41:16.297Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:41:16.344Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:41:17.050Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:41:17.056Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:42:14.768Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:42:14.811Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:42:15.523Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:42:15.547Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:43:51.739Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:43:51.775Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:43:52.493Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:43:52.523Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:45:05.965Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:45:05.960Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:45:06.659Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:45:06.700Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:46:02.534Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:46:02.524Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:46:03.337Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:46:03.365Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:47:14.462Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:47:14.511Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:47:15.265Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:47:15.322Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:48:26.078Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:48:26.133Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:48:26.774Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:48:26.801Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:54:22.851Z'
+}
+{
+  message: 'mongo',
+  level: 'info',
+  timestamp: '2023-02-20T15:54:22.936Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:54:23.586Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:54:23.616Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:54:51.545Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  timestamp: '2023-02-20T15:54:51.667Z'
+}

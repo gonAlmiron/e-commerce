@@ -16,6 +16,7 @@ var ProductsDTO = /*#__PURE__*/_createClass(function ProductsDTO(_ref) {
   _classCallCheck(this, ProductsDTO);
   this.name = name;
   this.price = price;
+  this.id = _id;
 });
 exports["default"] = ProductsDTO;
 var asDto = function asDto(prods) {

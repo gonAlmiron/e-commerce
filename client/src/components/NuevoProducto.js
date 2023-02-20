@@ -19,7 +19,6 @@ const NuevoProducto = (props) =>  {
         await axios.post("http://localhost:3002/api/products",
         {name, description, price}
         )
-        console.log( "Se creó un nuevo Producto: " + name + ", Descripción:"+ description `\n` +" Precio:"+ price)
       } 
         catch(err) {
             console.log(err.message)

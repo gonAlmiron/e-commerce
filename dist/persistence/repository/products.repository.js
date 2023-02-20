@@ -56,7 +56,7 @@ var ProductsRepository = /*#__PURE__*/function () {
               return this.dao.getAll();
             case 2:
               products = _context2.sent;
-              prodsDTO = (0, _products.asDto)(products);
+              prodsDTO = products;
               return _context2.abrupt("return", prodsDTO);
             case 5:
             case "end":

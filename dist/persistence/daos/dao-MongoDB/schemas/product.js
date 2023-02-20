@@ -8,8 +8,7 @@ var _mongoose = require("mongoose");
 var ProductSchema = new _mongoose.Schema({
   name: {
     type: String,
-    required: true,
-    unique: true
+    required: true
   },
   description: {
     type: String,

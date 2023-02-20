@@ -4,17 +4,17 @@ import { ProductSchema } from "./dao-MongoDB/schemas/product.js";
 
 
 let dao;
-let option = process.argv[2]
+// let option = process.argv[2]
+let selectedDao = 'mongo'
 
 
-switch (option) {
+switch (selectedDao) {
     case 'mongo':
-        dao = new DaoMongoDB('product', ProductSchema);
+        dao = new DaoMongoDB('products', ProductSchema);
         dao.initMongoDB()
-        logger.info(option);
         break;
     default:
-        dao = new DaoMongoDB('product', ProductSchema);
+        dao = new DaoMongoDB('products', ProductSchema);
         break;
 }
 
