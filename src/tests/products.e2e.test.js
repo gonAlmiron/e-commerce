@@ -3,10 +3,10 @@ import mongoose from "mongoose";
 import app from "../services/server";
 import request from "supertest";
 
-describe('********** TESTS SERVER PRODUCTS ************', () => {
+describe('TESTS SERVER PRODUCTS', () => {
   beforeEach(async() => {
     await mongoose.connection.collections['products'].drop();
-});
+  })
 
   it('create new product', async () => {
     const doc = {
@@ -22,6 +22,10 @@ describe('********** TESTS SERVER PRODUCTS ************', () => {
     expect(response.body.body).toBe(doc.body);
 
 
+  })
+
+  it('get all', async () => {
+    
   })
 it('get all products', async() => {
   const doc = {

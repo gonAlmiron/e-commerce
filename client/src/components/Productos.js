@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import {useState} from "react"
+import Table from 'react-bootstrap/Table';
 
 const Productos =  () => {
 
@@ -17,22 +18,30 @@ const Productos =  () => {
 
     return(
       <>
-      
-        {productos.map((prod) => {
-            return (
-                <div className="container my-5" key={prod._id} >
-                    <h3>Nombre del producto: {prod.name}</h3>
-                    <h3>Descripcion: {prod.description}</h3>
-                    <h3>Precio: ${prod.price}</h3>
-                </div>
-                
-            )
-        })}
-      
-      </>
-      
-    )
+         <Table striped bordered hover variant="dark" className="my-4">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Descripcion</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
 
+      {productos.map((prod) => {
+        return(
+          <tbody key={prod._id}>
+          <tr>
+            <td>{prod.name}</td>
+            <td>{prod.description}</td>
+            <td>{prod.price}</td>
+          </tr>
+          </tbody>
+          )
+      })
+   }
+    </Table>
+      </> 
+    )
 }
 
 export default Productos
