@@ -1,10 +1,15 @@
 import React, { useEffect } from "react"
 import {useState} from "react"
 import Table from 'react-bootstrap/Table';
+import Button from 'react-bootstrap/Button';
+import NuevoProductoDos from "./NuevoProductoDos";
+
+
 
 const Productos =  () => {
 
     const [productos, setProductos] = useState([])
+
 
     useEffect(() => {
 
@@ -17,7 +22,9 @@ const Productos =  () => {
     console.log(productos)
 
     return(
-      <>
+  <>
+      <NuevoProductoDos/>
+
          <Table striped bordered hover variant="dark" className="my-4">
       <thead>
         <tr>

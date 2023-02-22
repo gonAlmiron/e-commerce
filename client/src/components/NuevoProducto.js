@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 
-const NuevoProducto = (props) =>  {
+const NuevoProductoDos = (props) =>  {
 
 
     const [name, setName] = useState('')
@@ -50,4 +50,4 @@ const NuevoProducto = (props) =>  {
   );
 }
 
-export default NuevoProducto
+export default NuevoProductoDos
