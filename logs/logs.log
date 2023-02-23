@@ -1240,3 +1240,53 @@
   level: 'info',
   timestamp: '2023-02-22T22:46:43.846Z'
 }
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9508 ',
+  level: 'info',
+  timestamp: '2023-02-23T12:40:15.607Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11648 ',
+  level: 'info',
+  timestamp: '2023-02-23T12:40:39.500Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11000 ',
+  level: 'info',
+  timestamp: '2023-02-23T14:15:25.546Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9520 ',
+  level: 'info',
+  timestamp: '2023-02-23T14:15:31.230Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 4076 ',
+  level: 'info',
+  timestamp: '2023-02-23T14:15:50.994Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 5272 ',
+  level: 'info',
+  timestamp: '2023-02-23T14:18:14.819Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11232 ',
+  level: 'info',
+  timestamp: '2023-02-23T14:21:18.081Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10772 ',
+  level: 'info',
+  timestamp: '2023-02-23T14:21:25.889Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9636 ',
+  level: 'info',
+  timestamp: '2023-02-23T14:21:33.703Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10320 ',
+  level: 'info',
+  timestamp: '2023-02-23T14:22:17.091Z'
+}
