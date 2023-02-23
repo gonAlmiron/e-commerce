@@ -29,7 +29,6 @@ export default class DaoMongoDB {
     async getAll() {
         try {
             const docs = await this.collection.find({});
-            // return asDto(docs)
             return docs;
         } catch (error) {
             logger.info(error);
