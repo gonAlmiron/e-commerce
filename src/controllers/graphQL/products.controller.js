@@ -1,4 +1,4 @@
-import { saveProduct, getAllProducts } from '../../services/graphQL/products.services'
+import { saveProduct, getAllProducts } from '../../services/product.services'
 
 export const saveController = async () => {
         
