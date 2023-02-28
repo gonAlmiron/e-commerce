@@ -1,4 +1,5 @@
 import ProductsRepository from "../persistence/repository/products.repository";
+
 const productsRepository = new ProductsRepository
 
 export async function saveProduct(product){

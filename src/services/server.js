@@ -9,10 +9,21 @@ import { loginFunc, signUpFunc } from './auth';
 import passport from 'passport';
 import logger from '../logs/logger';
 import morgan from 'morgan';
+import { graphqlHTTP } from 'express-graphql';
+import {graphqlRoot, graphqlSchema} from './graphQL/products.services.js'
 
 
 const app = express()
 app.use(express.json())
+
+app.use(
+  '/graphql',
+  graphqlHTTP({     
+    schema: graphqlSchema,  
+    rootValue: graphqlRoot, 
+    graphiql: true, 
+  })
+);
 
 const ttlSeconds = 1800;
 
