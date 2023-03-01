@@ -2,12 +2,16 @@ import ProductsRepository from "../persistence/repository/products.repository";
 
 const productsRepository = new ProductsRepository
 
-export async function saveProduct(product){
+export const saveProduct = async (product) => {
     const prod = await productsRepository.save(product)
     return prod;
 };
 
-export async function getAllProducts() {
+export const getAllProducts = async() => {
     const products = await productsRepository.getAll();
     return products;
 };
+
+export const getProduct = async(id) => {
+    const product = await productsRepository.getProduct(id)
+}

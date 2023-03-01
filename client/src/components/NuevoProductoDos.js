@@ -26,6 +26,8 @@ const NuevoProductoDos = () => {
         await axios.post("http://localhost:3002/api/products",
         {name, description, price}
         )
+        
+        alert("Product add ok");
       } 
         catch(err) {
             console.log(err.message)

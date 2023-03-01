@@ -1,9 +1,9 @@
-import { saveProduct, getAllProducts } from '../../services/product.services'
+import { saveProduct, getAllProducts, getProduct } from '../../services/product.services'
 
-export const saveController = async () => {
+export const saveController = async ({data}) => {
         
-        const { body } = req;
-        const product = await saveProduct(body);
+        const newObj = {...data}
+        const product = await saveProduct(newObj);
         return product
   
 }
@@ -13,4 +13,10 @@ export const getAllController = async () => {
         const products = await getAllProducts();
         return products
 
+}
+
+export const getProductController = async (args) => {
+        const { id } = args
+        const product = await getProduct(id);
+        return product
 }

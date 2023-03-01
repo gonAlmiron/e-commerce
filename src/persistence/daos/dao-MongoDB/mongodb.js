@@ -1,7 +1,6 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import logger from '../../../logs/logger';
-// import { asDto } from '../../DTO/products.dto';
 
 dotenv.config();
 
@@ -22,7 +21,7 @@ export default class DaoMongoDB {
             const document = await this.collection.create(doc);
             return document;
         } catch (error) {
-            logger.info(error);
+            logger.error(error);
         }
     }
 
@@ -31,7 +30,16 @@ export default class DaoMongoDB {
             const docs = await this.collection.find({});
             return docs;
         } catch (error) {
-            logger.info(error);
+            logger.error(error);
+        }
+    }
+
+    async getProduct(id) {
+        try {
+            const product = await this.collection.findById(id)
+            return product
+        } catch (err) {
+            logger.error(err)
         }
     }
 }

@@ -18,16 +18,21 @@ switch (selectedDao) {
         break;
 }
 
-export async function save (obj) {
+export const save = async (obj) => {
     return await dao.save(obj);
 }
 
-export async function getAll() {
+export const getAll = async () => {
     return await dao.getAll();
 }
 
+export const getProduct = async (id) => {
+    return await dao.getProduct(id);
+}
+
+
 // EXPORTAMOS EL DAO PARA PODER USARLO EN EL REPOSITORY
 
-export function getDao() {
+export const getDao = () => {
     return dao;
 }
