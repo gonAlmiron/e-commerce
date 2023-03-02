@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import React from "react"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -76,7 +76,7 @@ const NuevoProductoDos = () => {
               <Form.Control 
               placeholder="Ingrese la descripción"
               name="description"
-              as="textarea" 
+              type="text"
               rows={3} 
               onChange={(e) => {setDescription(e.target.value)}} 
               />
