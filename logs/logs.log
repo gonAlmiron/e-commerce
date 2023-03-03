@@ -800,3 +800,8 @@
   level: 'info',
   timestamp: '2023-03-03T20:04:49.663Z'
 }
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 13064 ',
+  level: 'info',
+  timestamp: '2023-03-03T20:11:43.108Z'
+}

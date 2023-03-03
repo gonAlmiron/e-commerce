@@ -12,11 +12,14 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 var ProductsDTO = /*#__PURE__*/_createClass(function ProductsDTO(_ref) {
   var name = _ref.name,
-    price = _ref.price;
+    price = _ref.price,
+    _id = _ref._id,
+    description = _ref.description;
   _classCallCheck(this, ProductsDTO);
   this.name = name;
   this.price = price;
   this.id = _id;
+  this.description = description;
 });
 exports["default"] = ProductsDTO;
 var asDto = function asDto(prods) {

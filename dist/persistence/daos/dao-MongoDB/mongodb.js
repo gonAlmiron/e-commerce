@@ -17,8 +17,6 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-// import { asDto } from '../../DTO/products.dto';
-
 _dotenv["default"].config();
 _mongoose["default"].set('strictQuery', false);
 var DaoMongoDB = /*#__PURE__*/function () {
@@ -63,7 +61,7 @@ var DaoMongoDB = /*#__PURE__*/function () {
             case 7:
               _context2.prev = 7;
               _context2.t0 = _context2["catch"](0);
-              _logger["default"].info(_context2.t0);
+              _logger["default"].error(_context2.t0);
             case 10:
             case "end":
               return _context2.stop();
@@ -92,7 +90,7 @@ var DaoMongoDB = /*#__PURE__*/function () {
             case 7:
               _context3.prev = 7;
               _context3.t0 = _context3["catch"](0);
-              _logger["default"].info(_context3.t0);
+              _logger["default"].error(_context3.t0);
             case 10:
             case "end":
               return _context3.stop();
@@ -103,6 +101,35 @@ var DaoMongoDB = /*#__PURE__*/function () {
         return _getAll.apply(this, arguments);
       }
       return getAll;
+    }()
+  }, {
+    key: "getProduct",
+    value: function () {
+      var _getProduct = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(id) {
+        var product;
+        return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+          while (1) switch (_context4.prev = _context4.next) {
+            case 0:
+              _context4.prev = 0;
+              _context4.next = 3;
+              return this.collection.findById(id);
+            case 3:
+              product = _context4.sent;
+              return _context4.abrupt("return", product);
+            case 7:
+              _context4.prev = 7;
+              _context4.t0 = _context4["catch"](0);
+              _logger["default"].error(_context4.t0);
+            case 10:
+            case "end":
+              return _context4.stop();
+          }
+        }, _callee4, this, [[0, 7]]);
+      }));
+      function getProduct(_x2) {
+        return _getProduct.apply(this, arguments);
+      }
+      return getProduct;
     }()
   }]);
   return DaoMongoDB;

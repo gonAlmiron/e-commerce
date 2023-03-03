@@ -11,11 +11,15 @@ import logger from '../logs/logger';
 import morgan from 'morgan';
 import { graphqlHTTP } from 'express-graphql';
 import {graphqlRoot, graphqlSchema} from './graphQL/products.services.js'
+import { info } from '../docs/info';
+import swaggerUI from 'swagger-ui-express';
+import swaggerJSDoc from 'swagger-jsdoc';
 
 
 const app = express()
 app.use(express.json())
 
+// CONFIGURACION DE GRAPHQL
 app.use(
   '/graphql',
   graphqlHTTP({     
@@ -25,8 +29,13 @@ app.use(
   })
 );
 
-const ttlSeconds = 1800;
+// DOCUMENTACION
+const specs = swaggerJSDoc(info)
+app.use('/docs', swaggerUI.serve, swaggerUI.setup(specs))
 
+
+// CONFIGURACION SESSIONS DEL USUARIO
+const ttlSeconds = 1800;
 const StoreOptions = {
   store: MongoStore.create({
     mongoUrl: Config.MONGO_ATLAS_URL,
@@ -43,17 +52,12 @@ const StoreOptions = {
 };
 
 app.use(session(StoreOptions));
-
 const mySecret = 'mySecret';
 
 app.use(cookieParser(mySecret));
-
 app.use(express.urlencoded({ extended: true }))
-
 app.use(morgan('dev'));
-
 app.use(cors())
-
 app.use('/api', mainRouter);
 
 
@@ -69,6 +73,8 @@ passport.use('login', loginFunc);
 //signUpFunc va a ser una funcion que vamos a crear y va a tener la logica de registro de nuevos usuarios
 passport.use('signup', signUpFunc);
 
+
+// MIDDLEWARE DE ERRORES
 app.use((err, req, res, next) => {
   logger.info(err);
   res.status(500).json({

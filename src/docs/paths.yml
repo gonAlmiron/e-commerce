@@ -1,0 +1,57 @@
+paths:
+  /products:
+    post:
+      tags:
+        - Products
+      summary: Registro de un nuevo Producto en la base de datos
+      parameters: 
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schemas/BodyNewProduct'
+        required: true
+      responses:
+        200:
+          description: Se registro un producto correctamente
+          content: 
+            application/json:
+              schema: 
+                $ref: '#/components/schemas/Products/Product'
+        500:
+          description: Error en el servidor
+          $ref: '#/components/schemas/Products/NotFound'
+    get: 
+      tags:
+      - Products
+      summary: Lista de Productos de la base de datos
+      responses:
+        200:
+          description: Lista de Productos recibida con exito
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Products/getAllProducts'
+        500:
+          description: Error en el servidor
+          $ref: '#/components/schemas/Products/NotFound' 
+  /news/{id}:
+    get:
+      tags:
+      - Products
+      summary: Buscar producto por ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: string ID
+          schema:
+            type: string
+      responses:
+        200:
+          description: Producto encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Products/Product'
+        

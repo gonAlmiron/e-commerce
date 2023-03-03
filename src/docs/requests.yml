@@ -1,0 +1,52 @@
+components:
+  schemas:
+    Products: #este seria el tag '/products'
+      Product:
+        type: object
+        properties: 
+          id:
+            type: string
+          name:
+            type: string
+          description:
+            type: string
+          price:
+            type: number
+          Date:
+            type: date
+        example:
+          id: fq12f1oinf
+          name: Mouse PAD Corsair Anti derrames
+          description: Mousepad anti-derrames 90cm x 40cm
+          price: 13200
+          date: 22-02-2023
+      getAllProducts:
+        type: array
+        items:
+          properties:
+            id:
+              type: string
+              example: oidfoi12hr12
+            name:
+              type: string
+              example: Memoria RAM 8GB Corsair LPX Vengeance
+            description:  
+              type: string
+              example: Memoria RAM DDR4 2666MHz
+            price:
+              type: string
+              example: 12000
+      errorGetById:
+        type: object
+        properties: 
+          message: 
+            type: string
+            description: No se encontro el ID del producto
+        example: 
+          message: no se encontro el ID del producto solicitado
+      NotFound:
+        type: string
+        description: Error en el servidor
+      deleteById:
+        type: string
+        description: producto eliminado

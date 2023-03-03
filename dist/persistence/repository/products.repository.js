@@ -56,7 +56,7 @@ var ProductsRepository = /*#__PURE__*/function () {
               return this.dao.getAll();
             case 2:
               products = _context2.sent;
-              prodsDTO = products;
+              prodsDTO = (0, _products.asDto)(products);
               return _context2.abrupt("return", prodsDTO);
             case 5:
             case "end":
@@ -68,6 +68,30 @@ var ProductsRepository = /*#__PURE__*/function () {
         return _getAll.apply(this, arguments);
       }
       return getAll;
+    }()
+  }, {
+    key: "getProduct",
+    value: function () {
+      var _getProduct = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(id) {
+        var product;
+        return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+          while (1) switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.next = 2;
+              return this.dao.getProduct(id);
+            case 2:
+              product = _context3.sent;
+              return _context3.abrupt("return", product);
+            case 4:
+            case "end":
+              return _context3.stop();
+          }
+        }, _callee3, this);
+      }));
+      function getProduct(_x2) {
+        return _getProduct.apply(this, arguments);
+      }
+      return getProduct;
     }()
   }]);
   return ProductsRepository;

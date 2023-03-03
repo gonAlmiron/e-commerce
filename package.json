@@ -31,7 +31,9 @@
     "passport-local": "^1.0.0",
     "qrcode": "^1.5.1",
     "react-icons": "^4.7.1",
-    "twilio": "^3.84.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2",
+    "twilio": "^4.8.0",
     "winston": "^3.8.2"
   },
   "devDependencies": {

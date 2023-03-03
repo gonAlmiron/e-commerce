@@ -22,5 +22,6 @@ router.use('/auth', _users["default"]);
 router.use('/notifications', _notifications["default"]);
 router.post('/products', _products.saveController);
 router.get('/products', _products.getAllController);
+router.get('/products/:id', _products.getByIdController);
 var _default = router;
 exports["default"] = _default;
