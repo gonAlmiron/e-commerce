@@ -649,3 +649,18 @@
   level: 'info',
   timestamp: '2023-03-01T17:10:08.745Z'
 }
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9244 ',
+  level: 'info',
+  timestamp: '2023-03-03T14:42:03.250Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8264 ',
+  level: 'info',
+  timestamp: '2023-03-03T14:43:11.334Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9032 ',
+  level: 'info',
+  timestamp: '2023-03-03T14:52:10.165Z'
+}

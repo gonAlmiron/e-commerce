@@ -16,5 +16,5 @@ if (
 
 export default {
     MONGO_ATLAS_URL: mongoDBSRV,
-    PUERTO: process.env.PUERTO || 3002
+    PUERTO: process.env.PUERTO || 8080
 }
