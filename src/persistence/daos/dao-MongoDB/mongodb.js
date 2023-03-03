@@ -37,7 +37,7 @@ export default class DaoMongoDB {
     async getProduct(id) {
         try {
             const product = await this.collection.findById(id)
-            return product
+            return product;
         } catch (err) {
             logger.error(err)
         }

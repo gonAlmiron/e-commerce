@@ -2,7 +2,7 @@ import {Router} from 'express';
 
 import AuthRouter from './users.router'
 import NotificationRouter from './notifications.router'
-import {getAllController, saveController } from '../controllers/products.controller';
+import {getAllController, getByIdController, saveController } from '../controllers/products.controller';
 
 const router = Router();
 
@@ -22,6 +22,7 @@ router.use('/notifications', NotificationRouter)
 
 router.post('/products', saveController)
 router.get('/products', getAllController)
+router.get('/products/:id', getByIdController)
 
 
 

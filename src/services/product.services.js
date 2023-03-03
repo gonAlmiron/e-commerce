@@ -14,4 +14,5 @@ export const getAllProducts = async() => {
 
 export const getProduct = async(id) => {
     const product = await productsRepository.getProduct(id)
+    return product;
 }

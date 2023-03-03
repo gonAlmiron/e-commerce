@@ -664,3 +664,139 @@
   level: 'info',
   timestamp: '2023-03-03T14:52:10.165Z'
 }
+{
+  message: 'Server UP - Escuchando en el puerto 8080 - PID WORKER 7652 ',
+  level: 'info',
+  timestamp: '2023-03-03T14:52:41.988Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9604 ',
+  level: 'info',
+  timestamp: '2023-03-03T15:09:03.186Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11720 ',
+  level: 'info',
+  timestamp: '2023-03-03T19:54:43.622Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 5608 ',
+  level: 'info',
+  timestamp: '2023-03-03T19:55:11.748Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 13816 ',
+  level: 'info',
+  timestamp: '2023-03-03T19:55:54.354Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 12440 ',
+  level: 'info',
+  timestamp: '2023-03-03T19:57:02.877Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 12476 ',
+  level: 'info',
+  timestamp: '2023-03-03T19:57:06.053Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11472 ',
+  level: 'info',
+  timestamp: '2023-03-03T19:57:17.294Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10348 ',
+  level: 'info',
+  timestamp: '2023-03-03T19:57:21.506Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11120 ',
+  level: 'info',
+  timestamp: '2023-03-03T19:57:26.863Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 12940 ',
+  level: 'info',
+  timestamp: '2023-03-03T19:57:30.042Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1516 ',
+  level: 'info',
+  timestamp: '2023-03-03T19:58:53.258Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1616 ',
+  level: 'info',
+  timestamp: '2023-03-03T19:59:00.337Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 836 ',
+  level: 'info',
+  timestamp: '2023-03-03T20:00:00.904Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11200 ',
+  level: 'info',
+  timestamp: '2023-03-03T20:00:07.362Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 14140 ',
+  level: 'info',
+  timestamp: '2023-03-03T20:03:01.258Z'
+}
+{
+  messageFormat: undefined,
+  stringValue: '"[Function: next]"',
+  kind: 'ObjectId',
+  value: [Function: next],
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\bson\src\error.ts:16:5)
+      at new ObjectId (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\bson\src\objectid.ts:88:15)
+      at castObjectId (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1648:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1636:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\cast.js:349:32)
+      at model.Query.Query.cast (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\query.js:5341:12)
+      at model.Query.Query._castConditions (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\query.js:2214:10)
+      at model.Query.<anonymous> (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\query.js:2517:8)
+      at model.Query._wrappedThunk [as _findOne] (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\helpers\query\wrapThunk.js:29:8)
+      at C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\kareem\index.js:497:25
+      at processTicksAndRejections (node:internal/process/task_queues:78:11),
+  valueType: 'function',
+  level: 'error',
+  timestamp: '2023-03-03T20:03:04.395Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 13280 ',
+  level: 'info',
+  timestamp: '2023-03-03T20:03:34.101Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8044 ',
+  level: 'info',
+  timestamp: '2023-03-03T20:03:38.220Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 13460 ',
+  level: 'info',
+  timestamp: '2023-03-03T20:03:46.899Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 12976 ',
+  level: 'info',
+  timestamp: '2023-03-03T20:04:01.077Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11216 ',
+  level: 'info',
+  timestamp: '2023-03-03T20:04:45.325Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 3856 ',
+  level: 'info',
+  timestamp: '2023-03-03T20:04:49.663Z'
+}

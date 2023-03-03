@@ -1,4 +1,4 @@
-import { saveProduct, getAllProducts } from '../services/product.services'
+import { saveProduct, getAllProducts, getProduct } from '../services/product.services'
 
 export const saveController = async (req, res) => {
     const { body } = req;
@@ -16,5 +16,15 @@ export const getAllController = async (req, res) => {
         res.json(products);
     } catch (error) {
         console.log(error);
+    }
+}
+
+export const getByIdController = async (req, res) => {
+    try {
+        const {id} = req.params
+        const product = await getProduct(id);
+        res.json(product)
+    } catch (err) {
+        console.log(err)
     }
 }
