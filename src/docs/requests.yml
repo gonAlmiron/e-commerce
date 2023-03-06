@@ -11,7 +11,7 @@ components:
           description:
             type: string
           price:
-            type: number
+            type: integer
           Date:
             type: date
         example:

@@ -1,5 +1,5 @@
 paths:
-  /products:
+  /api/products:
     post:
       tags:
         - Products
@@ -35,7 +35,7 @@ paths:
         500:
           description: Error en el servidor
           $ref: '#/components/schemas/Products/NotFound' 
-  /news/{id}:
+  /api/products/{id}:
     get:
       tags:
       - Products
@@ -54,4 +54,40 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schema/Products/Product'
-        
+        404:
+          description: No se encuentra un producto con este ID
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Products/errorGetById'
+    put: 
+      tags:
+        - Products
+      summary:
+        Editar producto
+      parameters:
+          - in: path
+            name: id
+            required: true
+            description: se requiere ID del producto
+            schema:
+              type: string
+      requestBody:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/parameters/schema/BodyNewProduct'
+          required: true
+      responses:
+          200:
+            description: Producto actualizado
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schema/Products/Producto'
+          404:
+            description: Producto 
+            content:
+              applciation/json:
+                schema:
+                  $ref: ''

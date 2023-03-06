@@ -20,5 +20,15 @@ export default class ProductsRepository {
         const product = await this.dao.getProduct(id);
         return product
     }
+    
+    async deleteProduct(id) {
+        const product = await this.dao.deleteProduct(id)
+        return product
+    }
+
+    async updateProduct(id, product) {
+        const productUpdate = await this.dao.updateProduct(id, product)
+        return productUpdate
+    }
 }
 

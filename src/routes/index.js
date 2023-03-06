@@ -1,11 +1,10 @@
 import {Router} from 'express';
-
 import AuthRouter from './users.router'
 import NotificationRouter from './notifications.router'
-import {getAllController, getByIdController, saveController } from '../controllers/products.controller';
+import ProductsRouter from './products.router'
+
 
 const router = Router();
-
 
 router.get('/', (req, res) => {
      res.json({
@@ -13,18 +12,11 @@ router.get('/', (req, res) => {
     })
 })
 
-
-// router.use('/products', ProductsRouter)
-
 router.use('/auth', AuthRouter)
 
 router.use('/notifications', NotificationRouter)
 
-router.post('/products', saveController)
-router.get('/products', getAllController)
-router.get('/products/:id', getByIdController)
-
-
+router.use('/products', ProductsRouter)
 
 
 export default router;

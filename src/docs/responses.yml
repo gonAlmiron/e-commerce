@@ -13,9 +13,9 @@ components:
           description:
             type: string
           price:
-            type: number
+            type: integer
         example:
-          title: Mouse Katar PRO
+          name: Mouse Katar PRO
           description: Mouse ultraliviano Gamer para todas las plataformas
           price: 9950
           

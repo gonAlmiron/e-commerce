@@ -30,6 +30,14 @@ export const getProduct = async (id) => {
     return await dao.getProduct(id);
 }
 
+export const deleteProduct = async (id) => {
+    return await dao.deleteProduct(id)
+}
+
+export const updateProduct = async (id, prod) => {
+    return await dao.updateProduct(id, prod)
+    
+}
 
 // EXPORTAMOS EL DAO PARA PODER USARLO EN EL REPOSITORY
 

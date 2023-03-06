@@ -18,8 +18,8 @@ export default class DaoMongoDB {
 
     async save(doc) {
         try {
-            const document = await this.collection.create(doc);
-            return document;
+            const productoCreado = await this.collection.create(doc);
+            return productoCreado;
         } catch (error) {
             logger.error(error);
         }
@@ -27,8 +27,8 @@ export default class DaoMongoDB {
 
     async getAll() {
         try {
-            const docs = await this.collection.find({});
-            return docs;
+            const productos = await this.collection.find({});
+            return productos;
         } catch (error) {
             logger.error(error);
         }
@@ -39,6 +39,24 @@ export default class DaoMongoDB {
             const product = await this.collection.findById(id)
             return product;
         } catch (err) {
+            logger.error(err)
+        }
+    }
+
+    async deleteProduct(id) {
+        try { 
+            const productDeleted = await this.collection.findByIdAndDelete(id)
+            return productDeleted
+        } catch (err) {
+            logger.error(err)
+        }
+    }
+
+    async updateProduct(id, newProductData) {
+        try {
+            const productUpdated = await this.collection.findByIdAndUpdate(id, newProductData)
+            return productUpdated
+        } catch(err) {
             logger.error(err)
         }
     }

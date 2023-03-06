@@ -805,3 +805,696 @@
   level: 'info',
   timestamp: '2023-03-03T20:11:43.108Z'
 }
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6792 ',
+  level: 'info',
+  timestamp: '2023-03-06T13:55:25.370Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10012 ',
+  level: 'info',
+  timestamp: '2023-03-06T13:56:05.310Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 5148 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:06:59.106Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8396 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:10:59.305Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 5384 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:28:53.031Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9500 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:36:14.646Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 7612 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:38:05.729Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 304 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:39:21.301Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8448 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:42:33.500Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9576 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:43:47.682Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 2744 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:44:25.840Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9556 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:45:30.243Z'
+}
+{
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '"string"',
+  type: 'entity.parse.failed',
+  level: 'info',
+  timestamp: '2023-03-06T14:47:56.350Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1552 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:55:55.018Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10480 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:55:59.955Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6304 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:56:37.162Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 5356 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:57:59.624Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10028 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:58:34.684Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 2840 ',
+  level: 'info',
+  timestamp: '2023-03-06T14:58:43.331Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6564 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:30:06.601Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9876 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:30:15.616Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8356 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:30:21.740Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 5840 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:30:28.711Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1608 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:31:02.043Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11056 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:31:10.607Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11020 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:31:40.129Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1608 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:31:56.492Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 7108 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:32:06.756Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8248 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:32:14.898Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9876 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:32:37.496Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9076 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:33:14.169Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8468 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:33:39.780Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1516 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:34:24.567Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 4240 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:34:34.125Z'
+}
+{ level: 'error', timestamp: '2023-03-06T17:34:37.605Z' }
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8512 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:35:17.500Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6628 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:35:27.572Z'
+}
+{ level: 'error', timestamp: '2023-03-06T17:35:30.722Z' }
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 2444 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:36:03.175Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9580 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:36:11.728Z'
+}
+{ level: 'error', timestamp: '2023-03-06T17:36:17.619Z' }
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10760 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:37:03.100Z'
+}
+{ level: 'error', timestamp: '2023-03-06T17:37:05.181Z' }
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 4780 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:37:26.991Z'
+}
+{ level: 'error', timestamp: '2023-03-06T17:37:28.740Z' }
+{ level: 'error', timestamp: '2023-03-06T17:37:45.128Z' }
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6648 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:38:31.832Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8164 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:38:36.877Z'
+}
+{ level: 'error', timestamp: '2023-03-06T17:38:45.677Z' }
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9788 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:39:31.730Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11056 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:39:51.409Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 5840 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:40:28.341Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 2568 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:40:34.475Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8632 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:40:56.893Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1260 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:41:14.290Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 7368 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:41:24.336Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10012 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:41:39.735Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 7632 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:41:53.057Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8696 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:41:59.963Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8968 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:42:22.845Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 3920 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:42:41.406Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 3392 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:42:57.042Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11204 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:43:04.758Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10704 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:43:29.216Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1660 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:43:55.867Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 5148 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:44:38.390Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10036 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:45:04.742Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 3652 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:45:33.507Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 4112 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:45:40.240Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8208 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:45:52.788Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 4240 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:46:06.873Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 5192 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:46:31.225Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9912 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:46:44.615Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 4148 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:47:05.038Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 7856 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:47:34.845Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10268 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:48:14.424Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10980 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:50:00.904Z'
+}
+{
+  errors: {
+    price: ValidatorError: Path `price` is required.
+        at validate (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `price` is required.',
+        type: 'required',
+        path: 'price',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'price',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    description: ValidatorError: Path `description` is required.
+        at validate (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `description` is required.',
+        type: 'required',
+        path: 'description',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'description',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    name: ValidatorError: Path `name` is required.
+        at validate (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `name` is required.',
+        type: 'required',
+        path: 'name',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'name',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'products validation failed',
+  level: 'error',
+  timestamp: '2023-03-06T17:51:24.779Z'
+}
+{
+  errors: {
+    price: ValidatorError: Path `price` is required.
+        at validate (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `price` is required.',
+        type: 'required',
+        path: 'price',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'price',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    description: ValidatorError: Path `description` is required.
+        at validate (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `description` is required.',
+        type: 'required',
+        path: 'description',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'description',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    name: ValidatorError: Path `name` is required.
+        at validate (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\Gonzalo\Desktop\GONZI\Back End\e-commerce-main\e-commerce\node_modules\mongoose\lib\document.js:2905:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `name` is required.',
+        type: 'required',
+        path: 'name',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'name',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'products validation failed',
+  level: 'error',
+  timestamp: '2023-03-06T17:52:14.313Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9784 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:55:50.295Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 4344 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:56:01.654Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1528 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:56:09.804Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 3472 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:56:35.560Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8948 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:56:42.211Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 7620 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:57:14.970Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 2444 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:57:26.560Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6468 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:58:58.867Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1260 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:59:03.133Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 5084 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:59:13.203Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6680 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:59:22.723Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 7792 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:59:38.123Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8736 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:59:47.652Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10116 ',
+  level: 'info',
+  timestamp: '2023-03-06T17:59:58.191Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1408 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:00:05.699Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 11204 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:00:13.075Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1420 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:00:17.488Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6028 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:00:24.958Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8632 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:01:05.506Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6768 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:01:39.335Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 7048 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:02:02.159Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 7104 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:03:01.106Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 10512 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:03:14.064Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6300 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:03:20.817Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 2868 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:03:55.208Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 3032 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:03:59.856Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 3972 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:04:26.150Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 3404 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:12:08.420Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 480 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:12:18.634Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 2548 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:15:51.790Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6240 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:17:30.023Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8632 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:18:06.188Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 7548 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:18:12.466Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 1416 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:19:57.982Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8860 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:20:52.121Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 8248 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:21:09.620Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6628 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:21:21.884Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 3656 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:21:26.191Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 7576 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:37:27.551Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 6136 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:37:40.883Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 3728 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:37:54.202Z'
+}
+{
+  message: 'Server UP - Escuchando en el puerto 3002 - PID WORKER 9156 ',
+  level: 'info',
+  timestamp: '2023-03-06T18:38:03.031Z'
+}

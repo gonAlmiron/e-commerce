@@ -13,8 +13,9 @@ var info = {
       description: 'API Rest NodeJS - Express - MongoDB '
     },
     servers: [{
-      url: 'http://localhost:8080'
+      url: 'http://localhost:3002'
     }]
-  }
+  },
+  apis: ['./src/docs/*.yml']
 };
 exports.info = info;
