@@ -48,7 +48,7 @@ var DaoMongoDB = /*#__PURE__*/function () {
     key: "save",
     value: function () {
       var _save = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(doc) {
-        var document;
+        var productoCreado;
         return _regeneratorRuntime().wrap(function _callee2$(_context2) {
           while (1) switch (_context2.prev = _context2.next) {
             case 0:
@@ -56,8 +56,8 @@ var DaoMongoDB = /*#__PURE__*/function () {
               _context2.next = 3;
               return this.collection.create(doc);
             case 3:
-              document = _context2.sent;
-              return _context2.abrupt("return", document);
+              productoCreado = _context2.sent;
+              return _context2.abrupt("return", productoCreado);
             case 7:
               _context2.prev = 7;
               _context2.t0 = _context2["catch"](0);
@@ -77,7 +77,7 @@ var DaoMongoDB = /*#__PURE__*/function () {
     key: "getAll",
     value: function () {
       var _getAll = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-        var docs;
+        var productos;
         return _regeneratorRuntime().wrap(function _callee3$(_context3) {
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
@@ -85,8 +85,8 @@ var DaoMongoDB = /*#__PURE__*/function () {
               _context3.next = 3;
               return this.collection.find({});
             case 3:
-              docs = _context3.sent;
-              return _context3.abrupt("return", docs);
+              productos = _context3.sent;
+              return _context3.abrupt("return", productos);
             case 7:
               _context3.prev = 7;
               _context3.t0 = _context3["catch"](0);
@@ -130,6 +130,64 @@ var DaoMongoDB = /*#__PURE__*/function () {
         return _getProduct.apply(this, arguments);
       }
       return getProduct;
+    }()
+  }, {
+    key: "deleteProduct",
+    value: function () {
+      var _deleteProduct = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(id) {
+        var productDeleted;
+        return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+          while (1) switch (_context5.prev = _context5.next) {
+            case 0:
+              _context5.prev = 0;
+              _context5.next = 3;
+              return this.collection.findByIdAndDelete(id);
+            case 3:
+              productDeleted = _context5.sent;
+              return _context5.abrupt("return", productDeleted);
+            case 7:
+              _context5.prev = 7;
+              _context5.t0 = _context5["catch"](0);
+              _logger["default"].error(_context5.t0);
+            case 10:
+            case "end":
+              return _context5.stop();
+          }
+        }, _callee5, this, [[0, 7]]);
+      }));
+      function deleteProduct(_x3) {
+        return _deleteProduct.apply(this, arguments);
+      }
+      return deleteProduct;
+    }()
+  }, {
+    key: "updateProduct",
+    value: function () {
+      var _updateProduct = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(id, newProductData) {
+        var productUpdated;
+        return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+          while (1) switch (_context6.prev = _context6.next) {
+            case 0:
+              _context6.prev = 0;
+              _context6.next = 3;
+              return this.collection.findByIdAndUpdate(id, newProductData);
+            case 3:
+              productUpdated = _context6.sent;
+              return _context6.abrupt("return", productUpdated);
+            case 7:
+              _context6.prev = 7;
+              _context6.t0 = _context6["catch"](0);
+              _logger["default"].error(_context6.t0);
+            case 10:
+            case "end":
+              return _context6.stop();
+          }
+        }, _callee6, this, [[0, 7]]);
+      }));
+      function updateProduct(_x4, _x5) {
+        return _updateProduct.apply(this, arguments);
+      }
+      return updateProduct;
     }()
   }]);
   return DaoMongoDB;

@@ -12,7 +12,7 @@ components:
             type: string
           price:
             type: integer
-          Date:
+          date:
             type: date
         example:
           id: fq12f1oinf
@@ -37,13 +37,8 @@ components:
               type: string
               example: 12000
       errorGetById:
-        type: object
-        properties: 
-          message: 
-            type: string
-            description: No se encontro el ID del producto
-        example: 
-          message: no se encontro el ID del producto solicitado
+        type: string
+        description: No se encontro el ID del producto
       NotFound:
         type: string
         description: Error en el servidor

@@ -93,6 +93,54 @@ var ProductsRepository = /*#__PURE__*/function () {
       }
       return getProduct;
     }()
+  }, {
+    key: "deleteProduct",
+    value: function () {
+      var _deleteProduct = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(id) {
+        var product;
+        return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+          while (1) switch (_context4.prev = _context4.next) {
+            case 0:
+              _context4.next = 2;
+              return this.dao.deleteProduct(id);
+            case 2:
+              product = _context4.sent;
+              return _context4.abrupt("return", product);
+            case 4:
+            case "end":
+              return _context4.stop();
+          }
+        }, _callee4, this);
+      }));
+      function deleteProduct(_x3) {
+        return _deleteProduct.apply(this, arguments);
+      }
+      return deleteProduct;
+    }()
+  }, {
+    key: "updateProduct",
+    value: function () {
+      var _updateProduct = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(id, product) {
+        var productUpdate;
+        return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+          while (1) switch (_context5.prev = _context5.next) {
+            case 0:
+              _context5.next = 2;
+              return this.dao.updateProduct(id, product);
+            case 2:
+              productUpdate = _context5.sent;
+              return _context5.abrupt("return", productUpdate);
+            case 4:
+            case "end":
+              return _context5.stop();
+          }
+        }, _callee5, this);
+      }));
+      function updateProduct(_x4, _x5) {
+        return _updateProduct.apply(this, arguments);
+      }
+      return updateProduct;
+    }()
   }]);
   return ProductsRepository;
 }();

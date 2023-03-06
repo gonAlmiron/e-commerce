@@ -4,7 +4,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.save = exports.getProduct = exports.getDao = exports.getAll = void 0;
+exports.updateProduct = exports.save = exports.getProduct = exports.getDao = exports.getAll = exports.deleteProduct = void 0;
 var _logger = _interopRequireDefault(require("../../logs/logger"));
 var _mongodb = _interopRequireDefault(require("./dao-MongoDB/mongodb"));
 var _product = require("./dao-MongoDB/schemas/product.js");
@@ -83,9 +83,49 @@ var getProduct = /*#__PURE__*/function () {
     return _ref3.apply(this, arguments);
   };
 }();
+exports.getProduct = getProduct;
+var deleteProduct = /*#__PURE__*/function () {
+  var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(id) {
+    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
+        case 0:
+          _context4.next = 2;
+          return dao.deleteProduct(id);
+        case 2:
+          return _context4.abrupt("return", _context4.sent);
+        case 3:
+        case "end":
+          return _context4.stop();
+      }
+    }, _callee4);
+  }));
+  return function deleteProduct(_x3) {
+    return _ref4.apply(this, arguments);
+  };
+}();
+exports.deleteProduct = deleteProduct;
+var updateProduct = /*#__PURE__*/function () {
+  var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(id, prod) {
+    return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+      while (1) switch (_context5.prev = _context5.next) {
+        case 0:
+          _context5.next = 2;
+          return dao.updateProduct(id, prod);
+        case 2:
+          return _context5.abrupt("return", _context5.sent);
+        case 3:
+        case "end":
+          return _context5.stop();
+      }
+    }, _callee5);
+  }));
+  return function updateProduct(_x4, _x5) {
+    return _ref5.apply(this, arguments);
+  };
+}();
 
 // EXPORTAMOS EL DAO PARA PODER USARLO EN EL REPOSITORY
-exports.getProduct = getProduct;
+exports.updateProduct = updateProduct;
 var getDao = function getDao() {
   return dao;
 };
