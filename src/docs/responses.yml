@@ -1,21 +1,44 @@
 components:
-  parameters:
-    schemas:
-      BodyNewProduct:
+  schema:
+    Products: #este seria el tag '/products'
+      Product:
         type: object
-        required:
-          - name
-          - description
-          - price
-        properties:
+        properties: 
           name:
             type: string
+            description: nombre del prod
           description:
             type: string
+            description: descripcion del prod
           price:
             type: integer
+            description: precio del prod
         example:
-          name: Mouse Katar PRO
-          description: Mouse ultraliviano Gamer para todas las plataformas
-          price: 9950
-          
+          name: Mouse PAD Corsair Anti derrames
+          description: Mousepad anti-derrames 90cm x 40cm
+          price: 13200
+      getAllProducts:
+        type: array
+        items:
+          properties:
+            id:
+              type: string
+              example: oidfoi12hr12
+            name:
+              type: string
+              example: Memoria RAM 8GB Corsair LPX Vengeance
+            description:  
+              type: string
+              example: Memoria RAM DDR4 2666MHz
+            price:
+              type: string
+              example: 12000
+      errorGetById:
+        type: string
+        description: No se encontro el ID del producto
+      NotFound:
+        type: string
+        description: Error en el servidor
+      deleteById:
+        type: string
+        description: producto eliminado

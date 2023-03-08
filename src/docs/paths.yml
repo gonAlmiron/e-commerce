@@ -9,7 +9,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/parameters/schemas/BodyNewProduct'
+              $ref: '#/components/parameters/schema/BodyNewProduct'
         required: true
       responses:
         200:
@@ -17,10 +17,10 @@ paths:
           content: 
             application/json:
               schema: 
-                $ref: '#/components/schemas/Products/Product'
+                $ref: '#/components/schema/Products/Product'
         500:
           description: Error en el servidor
-          $ref: '#/components/schemas/Products/NotFound'
+          $ref: '#/components/schema/Products/NotFound'
     get: 
       tags:
       - Products
@@ -31,10 +31,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Products/getAllProducts'
+                $ref: '#/components/schema/Products/getAllProducts'
         500:
           description: Error en el servidor
-          $ref: '#/components/schemas/Products/NotFound' 
+          $ref: '#/components/schema/Products/NotFound' 
   /api/products/{id}:
     get:
       tags:
@@ -60,34 +60,34 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schema/Products/errorGetById'
-    put: 
+    put:
       tags:
-        - Products
-      summary:
-        Editar producto
+      - Products
+      summary: Editar producto por ID
       parameters:
-          - in: path
-            name: id
-            required: true
-            description: se requiere ID del producto
-            schema:
-              type: string
-      requestBody:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/parameters/schema/BodyNewProduct'
+        - in: path
+          name: id
           required: true
+          description: string id required
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schema/BodyNewProduct'
+        required: true
       responses:
           200:
-            description: Producto actualizado
+            description: Producto actualizada
             content:
               application/json:
                 schema:
-                  $ref: '#/components/schema/Products/Producto'
+                  $ref: '#/components/schema/Products/Product'
           404:
-            description: Producto 
+            description: No se encuentra prod con id {id}
             content:
-              applciation/json:
+              application/json:
                 schema:
-                  $ref: ''
+                  $ref: '#/components/schema/Products/errorGetById'     
+    delete:
