@@ -4,7 +4,6 @@ paths:
       tags:
         - Products
       summary: Registro de un nuevo Producto en la base de datos
-      parameters: 
       requestBody:
         content:
           application/json:
@@ -91,3 +90,26 @@ paths:
                 schema:
                   $ref: '#/components/schema/Products/errorGetById'     
     delete:
+      tags:
+      - Products
+      summary: Eliminar producto por id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: string id required
+          schema:
+            type: string
+      responses:
+        200:
+          description: producto eliminado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Products/deleteById'
+        404:
+          description: No se encuentra producto con id {id}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Products/errorGetById'   

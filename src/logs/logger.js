@@ -14,11 +14,4 @@ const logConfiguration = {
 const logger = createLogger(logConfiguration);
 
 
-  logger.add(
-    new File({
-      filename: './logs/logs.log',
-    }),
-  );
-
-
 export default logger;
