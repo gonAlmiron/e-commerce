@@ -5,7 +5,7 @@ export default class UsersRepository {
     constructor() {
         this.dao = getDao();
     }
-    async save (username, password) {
+    async saveUser (username, password) {
         const user = await this.dao.save(username, password);
         return user 
     }
@@ -16,8 +16,8 @@ export default class UsersRepository {
         return usersDTO;
     }
 
-    async getUser(username, password) {
-        const user = await this.dao.getById(username, password);
+    async getOne(username) {
+        const user = await this.dao.getOne(username);
         return user
     }
     

@@ -25,12 +25,34 @@ export default class DaoMongoDB {
         }
     }
 
+    async saveUser(username, password) {
+        try {
+            const newUser = await this.collection.create(username, password)
+            return newUser
+        } catch(error) {
+            logger.error(error.message)
+            logger.error(error.stack)
+        }
+    }
+
     async getAll() {
         try {
             const doc = await this.collection.find({});
             return doc;
         } catch (error) {
             logger.error(error);
+        }
+    }
+
+    async getOne(username) {
+        try {
+
+            const user = await this.collection.findOne(username)
+            return user
+
+        } catch(error) {
+            logger.error(error.message)
+            logger.error(error.stack)
         }
     }
 

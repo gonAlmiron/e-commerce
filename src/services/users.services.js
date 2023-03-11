@@ -3,6 +3,7 @@ import { Strategy as LocalStrategy } from 'passport-local';
 import { UserModel } from '../persistence/daos/dao-MongoDB/schemas/user'
 import logger from '../logs/logger';
 import UserAPI from '../api'
+import UsersRepository from '../persistence/repository/users.repository';
 
 
 const strategyOptions = {
@@ -11,20 +12,18 @@ const strategyOptions = {
   passReqToCallback: true,
 };
 
-export const passportOptions = { badRequestMessage: 'Falta username / password' };
+export const passportOptions = { 
+  badRequestMessage: 'Falta username / password',
+  failureRedirect: '/login'
+ };
 
 const login = async (req, username, password, done) => {
-
   try {
     const user = await UserAPI.find(username, password)
-
     if (!user)
       return done(null, false, { mensaje: 'Usuario no encontrado' });
-
     logger.info("ENCONTRE UN USUARIO", user)
-
     return done(null, user);
-
   } catch (err) {
     logger.info(err);
     logger.info(err.stack)
@@ -36,8 +35,8 @@ const signup = async (req, username, password, done) => {
 
   logger.info('SIGNUP!!');
   try {
-    const { username, password } = req.body
     const newUser = await UserAPI.create({ username, password });
+
     logger.info(newUser)
     return done(null, newUser);
 
@@ -47,6 +46,13 @@ const signup = async (req, username, password, done) => {
     return done(null, false, { mensaje: 'Error Inesperado', err });
   }
 };
+
+export const getAllUsers = async () => {
+  const users = await UsersRepository.getAll();
+  return users
+}
+
+
 
 export const loginFunc = new LocalStrategy(strategyOptions, login);
 export const signUpFunc = new LocalStrategy(strategyOptions, signup);

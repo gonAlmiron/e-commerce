@@ -1,6 +1,6 @@
 import logger from '../../logs/logger';
 import DaoMongoDB from './dao-MongoDB/mongodb' 
-import {ClientSchema } from "./dao-MongoDB/schemas/user.js";
+import {UserSchema } from "./dao-MongoDB/schemas/user.js";
 
 
 let dao;
@@ -10,20 +10,24 @@ let selectedDao = 'mongo'
 
 switch (selectedDao) {
     case 'mongo':
-        dao = new DaoMongoDB('users', ClientSchema);
+        dao = new DaoMongoDB('users', UserSchema);
         dao.initMongoDB()
         break;
     default:
-        dao = new DaoMongoDB('users', ClientSchema);
+        dao = new DaoMongoDB('users', UserSchema);
         break;
 }
 
-export const save = async (obj) => {
-    return await dao.save(obj);
+export const saveUser = async (username, password) => {
+    return await dao.save(username, password);
 }
 
 export const getAll = async () => {
     return await dao.getAll();
+}
+
+export const getUser = async (username) => {
+    return await dao.getOne(username)
 }
 
 export const getById = async (id) => {
