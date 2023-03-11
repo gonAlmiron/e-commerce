@@ -10,11 +10,11 @@ let selectedDao = 'mongo'
 
 switch (selectedDao) {
     case 'mongo':
-        dao = new DaoMongoDB('users', UserSchema);
+        dao = new DaoMongoDB('user', UserSchema);
         dao.initMongoDB()
         break;
     default:
-        dao = new DaoMongoDB('users', UserSchema);
+        dao = new DaoMongoDB('user', UserSchema);
         break;
 }
 

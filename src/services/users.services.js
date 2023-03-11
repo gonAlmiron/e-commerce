@@ -35,6 +35,7 @@ const signup = async (req, username, password, done) => {
 
   logger.info('SIGNUP!!');
   try {
+    const {username, password} = req.body
     const newUser = await UserAPI.create({ username, password });
 
     logger.info(newUser)

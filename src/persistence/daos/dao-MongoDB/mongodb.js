@@ -25,9 +25,9 @@ export default class DaoMongoDB {
         }
     }
 
-    async saveUser(username, password) {
+    async saveUser(doc) {
         try {
-            const newUser = await this.collection.create(username, password)
+            const newUser = await this.collection.create(doc)
             return newUser
         } catch(error) {
             logger.error(error.message)
@@ -47,7 +47,7 @@ export default class DaoMongoDB {
     async getOne(username) {
         try {
 
-            const user = await this.collection.findOne(username)
+            const user = await this.collection.findOne({username})
             return user
 
         } catch(error) {
