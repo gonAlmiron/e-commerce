@@ -44,10 +44,10 @@ export default class DaoMongoDB {
         }
     }
 
-    async getOne(username) {
+    async getOne(username, password) {
         try {
 
-            const user = await this.collection.findOne({username})
+            const user = await this.collection.findOne({username, password})
             return user
 
         } catch(error) {
@@ -77,7 +77,7 @@ export default class DaoMongoDB {
     async updateById(id, newData) {
         try {
             const updated = await this.collection.findByIdAndUpdate(id, newData)
-            return udated
+            return updated
         } catch(err) {
             logger.error(err)
         }

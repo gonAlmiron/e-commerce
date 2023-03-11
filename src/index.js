@@ -9,5 +9,3 @@ server.listen(PORT, () => logger.info(`Server UP - Escuchando en el puerto ${POR
 
 server.on('error', (err) => logger.error(err))
 
-    
-app.use(compression())
