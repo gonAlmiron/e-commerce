@@ -14,7 +14,7 @@ router.post('/signup', signUpController);
 router.get('/users', getAllController)
 
 router.post('/logout', (req, res) => {
-  req.logOut();
+  req.logout();
   res.json({ message: 'GoodBye!' });
 });
 

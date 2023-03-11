@@ -3,12 +3,12 @@ import axios from "axios";
 import {useState} from "react"
 import { Link } from "react-router-dom";
 
-
 const Login = (props) =>  {
 
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+
 
     
     const handleSubmit = async (e) => {
@@ -18,14 +18,13 @@ const Login = (props) =>  {
       try {
 
         await axios.post("http://localhost:3002/api/auth/login",
-        {username, password} 
+        {username, password } 
         )} 
         catch(err) {
 
       }
 
     }
-
 
   return (
     <div className="Auth-form-container">

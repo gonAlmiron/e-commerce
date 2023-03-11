@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "npm install && babel src --out-dir dist",
     "start": "npm run build && node ./dist/index.js",
     "dev": "nodemon --exec babel-node ./src/index.js",
     "test": "npm run build && set NODE_OPTIONS=--experimental-vm-modules && npx jest"
