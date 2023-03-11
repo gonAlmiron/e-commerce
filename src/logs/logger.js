@@ -1,9 +1,8 @@
 import winston from 'winston';
-import Config from '../config';
 
 const { createLogger, format, transports } = winston;
 const { combine, timestamp, prettyPrint } = format;
-const { Console, File } = transports;
+const { Console } = transports;
 
 const logConfiguration = {
   level: 'info',
