@@ -1,6 +1,6 @@
 import passport from 'passport';
 import logger from '../logs/logger.js';
-import { passportOptions } from '../services/auth.js';
+import { passportOptions } from '../services/users.services.js';
 
 export const signUpController = (req, res, next) => {
     passport.authenticate('signup', passportOptions, (err, user, info) => {

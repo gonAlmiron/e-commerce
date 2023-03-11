@@ -26,16 +26,16 @@ export const getAll = async () => {
     return await dao.getAll();
 }
 
-export const getProduct = async (id) => {
-    return await dao.getProduct(id);
+export const getById = async (id) => {
+    return await dao.getById(id);
 }
 
-export const deleteProduct = async (id) => {
-    return await dao.deleteProduct(id)
+export const deleteById = async (id) => {
+    return await dao.deleteById(id)
 }
 
-export const updateProduct = async (id, prod) => {
-    return await dao.updateProduct(id, prod)
+export const updateById = async (id, prod) => {
+    return await dao.updateById(id, prod)
     
 }
 

@@ -1,5 +1,5 @@
 import { asDto } from "../DTO/products.dto";
-import { getDao} from "../daos/factory";
+import { getDao} from "../daos/products.factory";
 
 export default class ProductsRepository {
     constructor() {

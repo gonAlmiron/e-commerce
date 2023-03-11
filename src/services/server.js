@@ -5,7 +5,7 @@ import Config from '../config';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import mainRouter from '../routes';
-import { loginFunc, signUpFunc } from './auth';
+import { loginFunc, signUpFunc } from './users.services';
 import passport from 'passport';
 import logger from '../logs/logger';
 import morgan from 'morgan';

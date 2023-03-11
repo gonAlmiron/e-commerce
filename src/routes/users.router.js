@@ -1,7 +1,7 @@
 import {Router} from 'express'
 import { loginController, signUpController } from '../controllers/users.controller';
 import passport from 'passport';
-import { passportOptions } from '../services/auth';
+import { passportOptions } from '../services/users.services';
 
 
 

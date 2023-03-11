@@ -2,6 +2,7 @@ import {Router} from 'express';
 import AuthRouter from './users.router'
 import NotificationRouter from './notifications.router'
 import ProductsRouter from './products.router'
+import ClientsRouter from './clients.router'
 
 
 const router = Router();
@@ -17,6 +18,8 @@ router.use('/auth', AuthRouter)
 router.use('/notifications', NotificationRouter)
 
 router.use('/products', ProductsRouter)
+
+router.use('/clients', ClientsRouter)
 
 
 export default router;
