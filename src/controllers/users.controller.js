@@ -46,7 +46,7 @@ export const getAllController = async (req, res) => {
     const users = await getAllUsers();
     res.status(200).json(users)
   } catch (error) {
-    res.status(501).send(error.message)
+    res.status(501).send(error.message, error.stack)
   }
 }
 
