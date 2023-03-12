@@ -11,7 +11,7 @@ var _config = _interopRequireDefault(require("../config"));
 var _expressSession = _interopRequireDefault(require("express-session"));
 var _cookieParser = _interopRequireDefault(require("cookie-parser"));
 var _routes = _interopRequireDefault(require("../routes"));
-var _auth = require("./auth");
+var _users = require("./users.services");
 var _passport = _interopRequireDefault(require("passport"));
 var _logger = _interopRequireDefault(require("../logs/logger"));
 var _morgan = _interopRequireDefault(require("morgan"));
@@ -68,10 +68,10 @@ app.use(_passport["default"].initialize());
 app.use(_passport["default"].session());
 
 // Cuando un usuario se autentique correctamente, passport va a devolver en la session la info del usuario
-_passport["default"].use('login', _auth.loginFunc);
+_passport["default"].use('login', _users.loginFunc);
 
 //signUpFunc va a ser una funcion que vamos a crear y va a tener la logica de registro de nuevos usuarios
-_passport["default"].use('signup', _auth.signUpFunc);
+_passport["default"].use('signup', _users.signUpFunc);
 
 // MIDDLEWARE DE ERRORES
 app.use(function (err, req, res, next) {

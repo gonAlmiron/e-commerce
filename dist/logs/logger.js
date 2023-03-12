@@ -5,7 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _winston = _interopRequireDefault(require("winston"));
-var _config = _interopRequireDefault(require("../config"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 var createLogger = _winston["default"].createLogger,
   format = _winston["default"].format,
@@ -13,8 +12,7 @@ var createLogger = _winston["default"].createLogger,
 var combine = format.combine,
   timestamp = format.timestamp,
   prettyPrint = format.prettyPrint;
-var Console = transports.Console,
-  File = transports.File;
+var Console = transports.Console;
 var logConfiguration = {
   level: 'info',
   format: combine(timestamp(), prettyPrint()),
@@ -23,8 +21,5 @@ var logConfiguration = {
   })]
 };
 var logger = createLogger(logConfiguration);
-logger.add(new File({
-  filename: './logs/logs.log'
-}));
 var _default = logger;
 exports["default"] = _default;

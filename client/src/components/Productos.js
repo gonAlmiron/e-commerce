@@ -2,8 +2,8 @@ import React, { useEffect } from "react"
 import {useState} from "react"
 import Table from 'react-bootstrap/Table';
 import NuevoProductoDos from "./NuevoProductoDos";
-
-
+// import { QRCode } from "antd";
+import axios from "axios";
 
 
 const Productos =  () => {
@@ -15,13 +15,24 @@ const Productos =  () => {
             fetch('http://localhost:3002/api/products')
             .then((resp) => resp.json())
             .then((data) => {setProductos(data)})
+    
             
             
     }, [])
     console.log(productos)
 
-    return(
-  <>
+    // const url = `http://localhost/3002/api/products/${productos}`
+
+    const borrarProducto = () => {
+      axios.delete(`http://localhost/3002/api/products`)
+  
+
+    }
+
+
+  return (
+
+      <>
       <NuevoProductoDos/>
 
          <Table striped bordered hover variant="dark" className="my-4">
@@ -40,6 +51,8 @@ const Productos =  () => {
             <td>{prod.name}</td>
             <td>{prod.description}</td>
             <td>{prod.price}</td>
+            
+            {/* <td> <QRCode value={url}/></td> */}
           </tr>
           </tbody>
           )
