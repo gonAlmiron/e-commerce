@@ -28,6 +28,7 @@ export const signUpController = (req, res, next) => {
   }
 
 export const loginController = (req, res) => {
+  
   try {
     
     logger.info(`Se logeó un usuario. Ruta /LOGIN. Metogo POST`)

@@ -13,8 +13,7 @@ const strategyOptions = {
 };
 
 export const passportOptions = { 
-  badRequestMessage: 'Falta username / password',
-  failureRedirect: '/login'
+  badRequestMessage: 'Falta username / password'
  };
 
 const login = async (req, username, password, done) => {

@@ -11,8 +11,6 @@ router.post( '/login', passport.authenticate('login', passportOptions), loginCon
 
 router.post('/signup', signUpController);
 
-router.get('/users', getAllController)
-
 router.post('/logout', (req, res) => {
   req.logout();
   res.json({ message: 'GoodBye!' });
