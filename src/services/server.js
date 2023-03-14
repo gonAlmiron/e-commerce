@@ -14,6 +14,8 @@ import {graphqlRoot, graphqlSchema} from './graphQL/products.services.js'
 import { info } from '../docs/info';
 import swaggerUI from 'swagger-ui-express';
 import swaggerJSDoc from 'swagger-jsdoc';
+import http from 'http';
+import io from 'socket.io';
 
 
 const app = express()
@@ -74,13 +76,38 @@ passport.use('login', loginFunc);
 passport.use('signup', signUpFunc);
 
 
+// PREPARACION WEBSOCKETS PARA CHAT
+
+const myHTTPServer = http.Server(app)
+
+const myWebSocketServer = io(myHTTPServer)
+
+// conexion de websocket y envio de eventos
+
+myWebSocketServer.on('connection', (socket) => {
+  console.log("Se acaba de conectar un cliente")
+  console.log('ID SOCKET SERVER', socket.id);
+  console.log('ID SOCKET CLIENTE', socket.client.id);
+
+  socket.on('nombreDeEvento', (dataRecibida) => {
+      
+  console.log(`El cliente ${socket.client.id} acaba de mandar un mensaje de tipo nombreDeEvento`)
+  console.log(dataRecibida)
+  socket.emit('respuesta', {recibido: 'ok'})
+  socket.emit('notificacionPersonal', {msg: 'Bienvenido al chat!'});
+
+})
+})
+
+
+
 // MIDDLEWARE DE ERRORES
 app.use((err, req, res, next) => {
-  logger.info(err);
+  logger.error(err.message);
   res.status(500).json({
     error: 'an error occurred',
     msg: err.stack
   });
 });
 
-export default app
+export default myHTTPServer;
