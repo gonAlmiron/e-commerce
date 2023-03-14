@@ -80,24 +80,23 @@ passport.use('signup', signUpFunc);
 
 const myHTTPServer = http.Server(app)
 
-const myWebSocketServer = io(myHTTPServer)
+const socketIO = io(myHTTPServer)
 
 // conexion de websocket y envio de eventos
 
-myWebSocketServer.on('connection', (socket) => {
-  console.log("Se acaba de conectar un cliente")
-  console.log('ID SOCKET SERVER', socket.id);
-  console.log('ID SOCKET CLIENTE', socket.client.id);
+socketIO.on('connection', (socket) => {
 
-  socket.on('nombreDeEvento', (dataRecibida) => {
-      
-  console.log(`El cliente ${socket.client.id} acaba de mandar un mensaje de tipo nombreDeEvento`)
-  console.log(dataRecibida)
-  socket.emit('respuesta', {recibido: 'ok'})
-  socket.emit('notificacionPersonal', {msg: 'Bienvenido al chat!'});
+  console.log(`⚡: ${socket.id} user just connected!`);
 
-})
-})
+  //Listens and logs the message to the console
+  socket.on('message', (data) => {
+    socketIO.emit('messageResponse',data)
+  });
+
+  socket.on('disconnect', () => {
+    console.log('🔥: A user disconnected');
+  });
+});
 
 
 
