@@ -16,6 +16,7 @@ import swaggerUI from 'swagger-ui-express';
 import swaggerJSDoc from 'swagger-jsdoc';
 import http from 'http';
 import io from 'socket.io';
+import compression from 'compression';
 
 
 const app = express()
@@ -61,6 +62,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(morgan('dev'));
 app.use(cors())
 app.use('/api', mainRouter);
+app.use(compression())
 
 
 //Indicamos que vamos a usar passport en todas nuestras rutas

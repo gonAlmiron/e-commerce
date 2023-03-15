@@ -10,11 +10,11 @@ if (
     process.env.NODE_ENV == 'TEST=E2E'
 ) {
     logger.info('Estamos en un test. usando SRV MONGO TEST');
-    mongoDBSRV = process.env.MONGO_ATLAS_URL_TEST || 'mongodb+srv://gonDev:1234@planeta-it.o7o4bsp.mongodb.net/TEST-planetaIT?retryWrites=true&w=majority'
+    mongoDBSRV = process.env.MONGO_ATLAS_URL_TEST || 'mongodb+srv://gonDev:1234@planeta-it-TEST.o7o4bsp.mongodb.net/PlanetaITGestion?retryWrites=true&w=majority'
 }
 
 
 export default {
     MONGO_ATLAS_URL: mongoDBSRV,
-    PUERTO: process.env.PUERTO || 3002
+    PUERTO: process.env.PUERTO || 8080
 }
