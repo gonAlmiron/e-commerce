@@ -2,8 +2,8 @@ import ChatRepository from "../persistence/repository/chat.repository";
 
 const chatRepository = new ChatRepository
 
-export const saveMessage = async (message) => {
-    const prod = await chatRepository.save(message)
+export const saveMessage = async (body) => {
+    const prod = await chatRepository.save(body)
     return prod;
 };
 

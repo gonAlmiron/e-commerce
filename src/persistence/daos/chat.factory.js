@@ -25,3 +25,7 @@ export const save = async (obj) => {
 export const getAll = async () => {
     return await dao.getAll();
 }
+
+export const getDao = () => {
+    return dao;
+}

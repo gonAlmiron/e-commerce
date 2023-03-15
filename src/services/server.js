@@ -80,6 +80,7 @@ passport.use('signup', signUpFunc);
 
 const myHTTPServer = http.Server(app)
 
+
 const socketIO = io(myHTTPServer, {
   cors: {
       origin: '*'

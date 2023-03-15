@@ -7,14 +7,12 @@ export const saveMessageController = async (req, res) => {
         console.log(msg)
         res.send(msg)
     } catch (err) {
-        res.send('Error al guardar el mensaje', err.stack)
+        res.send(err.stack)
     }
-
-    }
+}
 
 
 export const getMessagesController = async (req, res) => {
-
     try {
         const messages = await getAllMessages()
         return res.send(messages)
