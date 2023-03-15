@@ -84,6 +84,8 @@ const socketIO = io(myHTTPServer)
 
 // conexion de websocket y envio de eventos
 
+let users = []
+
 socketIO.on('connection', (socket) => {
 
   console.log(`⚡: ${socket.id} user just connected!`);
@@ -91,10 +93,23 @@ socketIO.on('connection', (socket) => {
   //Listens and logs the message to the console
   socket.on('message', (data) => {
     socketIO.emit('messageResponse',data)
+    console.log(data)
   });
+
+    socket.on('newUser', (data) => {
+      users.push(data);
+      console.log(` Usuarios: ${users}`);
+      socketIO.emit('newUserResponse', users);
+    });
+
+  socket.on('typing', (data) => 
+  socket.broadcast.emit('typingResponse', data));
 
   socket.on('disconnect', () => {
     console.log('🔥: A user disconnected');
+    users = users.filter((user) => user.socketID !== socket.id);
+    socketIO.emit('newUserResponse', users);
+    socket.disconnect();
   });
 });
 
