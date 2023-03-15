@@ -2,8 +2,9 @@ import { saveMessage, getAllMessages } from "../services/chat.services"
 
 export const saveMessageController = async (req, res) => {
     try {
-        const { body } = req
-        const msg = await saveMessage(body)
+        const message = req.body;
+        const from = req.body;
+        const msg = await saveMessage(message, from)
         console.log(msg)
         res.send(msg)
     } catch (err) {
