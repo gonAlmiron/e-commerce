@@ -50,5 +50,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gonAlmiron/e-commerce.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/gonAlmiron/e-commerce/issues"
+  },
+  "homepage": "https://github.com/gonAlmiron/e-commerce#readme"
 }
